@@ -283,6 +283,8 @@
         border-radius: 20px;
     }
 
+
+
     @media screen and (max-width: 960px) {
         .main__container {
             display: grid;
@@ -367,24 +369,144 @@
 /* Gallery */
 
 .gallery-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align: center;
-    margin: 30px auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.smaller-img {
-    width: 300px;
+.gallery__content{
+    width: 80%;
+    max-width: 120rem;
+    margin: auto auto 50px auto;
+    padding: 0 1.5rem;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    row-gap: 20px;
-    column-gap: 20px;
-    margin: 0 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+                        'img-14 img-10 img-7 img-7 img-13' 
+                        'img-14 img-1 img-1 img-8 img-15'
+                        'img-11 img-3 img-3 img-3 img-15'
+                        'img-6 img-9 img-4 img-12 img-16'
+                        'img-5 img-5 img-4 img-2 img-2';
 }
+
+.gallery a {
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.gallery a:hover {
+    filter: grayscale(0);
+    transition: filter 0.5s ease, transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.img-1 {
+    grid-area: img-1;
+    background-image: url(/images/angel.jpg);
+}
+
+.img-2 {
+    grid-area: img-2;
+    background-image: url(/images/animals.jpg);
+}
+
+.img-3 {
+    grid-area: img-3;
+    background-image: url(/images/brother.jpg);
+}
+
+.img-4 {
+    grid-area: img-4;
+    min-height: 41.5rem;
+    background-image: url(/images/brother2.jpg);
+}
+
+.img-5 {
+    grid-area: img-5;
+    background-image: url(/images/dad.jpg);
+}
+
+.img-6 {
+    grid-area: img-6;
+    background-image: url(/images/dog.jpg);
+}
+
+.img-7 {
+    grid-area: img-7;
+    background-image: url(/images/face.jpg);
+}
+
+.img-8 {
+    grid-area: img-8;
+    background-image: url(/images/friend.jpg);
+}
+
+.img-9 {
+    grid-area: img-9;
+    background-image: url(/images/joda.jpg);
+}
+
+.img-10 {
+    grid-area: img-10;
+    background-image: url(/images/moon_cat.jpg);
+}
+
+.img-11 {
+    grid-area: img-11;
+    background-image: url(/images/octopus.jpg);
+}
+
+.img-12 {
+    grid-area: img-12;
+    background-image: url(/images/plants.jpg);
+}
+
+.img-13 {
+    grid-area: img-13;
+    background-image: url(/images/tears.jpg);
+}
+
+.img-14 {
+    grid-area: img-14;
+    min-height: 41.5rem;
+    background-image: url(/images/wanda.jpg);
+}
+
+.img-15 {
+    grid-area: img-15;
+    min-height: 41.5rem;
+    background-image: url(/images/xfiles.jpg);
+}
+
+.img-16 {
+    grid-area: img-16;
+    background-image: url(/images/fish-crow.jpg);
+}
+
+@media screen and (max-width: 960px) {
+
+    .gallery__content {
+        width: 100%;
+    }
+
+}
+
+
 
 
     
