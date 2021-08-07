@@ -203,11 +203,9 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 786px) {
         #navbar__logo {
-            padding-left: 25px;
-            font-size: 2rem;
-            transition: all 0.5s ease;
+            font-size: 1.5rem;
         }
     }
 
