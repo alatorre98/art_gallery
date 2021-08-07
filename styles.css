@@ -417,7 +417,7 @@
 
 .img-1 {
     grid-area: img-1;
-    background-image: url(images/angel.jpg);
+    background-image: url(./images/angel.jpg);
 }
 
 .img-2 {
