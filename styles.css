@@ -32,7 +32,7 @@
 }
 
 #navbar__logo {
-    font-family: 'WindSong', cursive;
+    
     background: #D62900;
     background: -webkit-linear-gradient(to bottom, #D62900 0%, #FF9B55 25%, #FFFFFF 50%, #D461A6 75%, #A50062 100%);
     background: -moz-linear-gradient(to bottom, #D62900 0%, #FF9B55 25%, #FFFFFF 50%, #D461A6 75%, #A50062 100%);
@@ -502,7 +502,69 @@
         width: 100%;
     }
 
+    .gallery a {
+        filter: grayscale(0);
+    }
+
 }
+
+@media screen and (max-width: 768px) {
+
+    .gallery__content {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        grid-template-areas: 
+                            'img-1 img-2 img-3 img-4' 
+                            'img-5 img-6 img-7 img-8'
+                            'img-9 img-10 img-11 img-12'
+                            'img-13 img-14 img-15 img-16';
+    }
+
+    .img-4 {
+        grid-area: img-4;
+        min-height: 20rem;
+        background-image: url(./images/brother2.jpg);
+    }
+
+
+    .img-14 {
+        grid-area: img-14;
+        min-height: 20rem;
+        background-image: url(./images/wanda.jpg);
+    }
+    
+    .img-15 {
+        grid-area: img-15;
+        min-height: 20rem;
+        background-image: url(./images/xfiles.jpg);
+    }
+    
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .gallery {
+        margin-left: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+                            'img-1 img-2'
+                            'img-3 img-4'
+                            'img-5 img-6'
+                            'img-7 img-8'
+                            'img-9 img-10'
+                            'img-11 img-12'
+                            'img-13 img-14';
+
+    }
+
+}
+
 
 
 
