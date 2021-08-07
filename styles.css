@@ -417,85 +417,85 @@
 
 .img-1 {
     grid-area: img-1;
-    background-image: url(/images/angel.jpg);
+    background-image: url(images/angel.jpg);
 }
 
 .img-2 {
     grid-area: img-2;
-    background-image: url(/images/animals.jpg);
+    background-image: url(images/animals.jpg);
 }
 
 .img-3 {
     grid-area: img-3;
-    background-image: url(/images/brother.jpg);
+    background-image: url(images/brother.jpg);
 }
 
 .img-4 {
     grid-area: img-4;
     min-height: 41.5rem;
-    background-image: url(/images/brother2.jpg);
+    background-image: url(images/brother2.jpg);
 }
 
 .img-5 {
     grid-area: img-5;
-    background-image: url(/images/dad.jpg);
+    background-image: url(images/dad.jpg);
 }
 
 .img-6 {
     grid-area: img-6;
-    background-image: url(/images/dog.jpg);
+    background-image: url(images/dog.jpg);
 }
 
 .img-7 {
     grid-area: img-7;
-    background-image: url(/images/face.jpg);
+    background-image: url(images/face.jpg);
 }
 
 .img-8 {
     grid-area: img-8;
-    background-image: url(/images/friend.jpg);
+    background-image: url(images/friend.jpg);
 }
 
 .img-9 {
     grid-area: img-9;
-    background-image: url(/images/joda.jpg);
+    background-image: url(images/joda.jpg);
 }
 
 .img-10 {
     grid-area: img-10;
-    background-image: url(/images/moon_cat.jpg);
+    background-image: url(images/moon_cat.jpg);
 }
 
 .img-11 {
     grid-area: img-11;
-    background-image: url(/images/octopus.jpg);
+    background-image: url(images/octopus.jpg);
 }
 
 .img-12 {
     grid-area: img-12;
-    background-image: url(/images/plants.jpg);
+    background-image: url(images/plants.jpg);
 }
 
 .img-13 {
     grid-area: img-13;
-    background-image: url(/images/tears.jpg);
+    background-image: url(images/tears.jpg);
 }
 
 .img-14 {
     grid-area: img-14;
     min-height: 41.5rem;
-    background-image: url(/images/wanda.jpg);
+    background-image: url(images/wanda.jpg);
 }
 
 .img-15 {
     grid-area: img-15;
     min-height: 41.5rem;
-    background-image: url(/images/xfiles.jpg);
+    background-image: url(images/xfiles.jpg);
 }
 
 .img-16 {
     grid-area: img-16;
-    background-image: url(/images/fish-crow.jpg);
+    background-image: url(images/fish-crow.jpg);
 }
 
 @media screen and (max-width: 960px) {
