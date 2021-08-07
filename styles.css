@@ -32,7 +32,7 @@
 }
 
 #navbar__logo {
-    
+    font-family: 'Windsong', cursive;
     background: #D62900;
     background: -webkit-linear-gradient(to bottom, #D62900 0%, #FF9B55 25%, #FFFFFF 50%, #D461A6 75%, #A50062 100%);
     background: -moz-linear-gradient(to bottom, #D62900 0%, #FF9B55 25%, #FFFFFF 50%, #D461A6 75%, #A50062 100%);
@@ -48,6 +48,7 @@
     text-decoration: none;
     font-size: 3rem;
     transition: all 0.5s ease;
+    z-index: 99;
 }
 
 .navbar__menu {
@@ -502,13 +503,15 @@
         width: 100%;
     }
 
-    .gallery a {
-        filter: grayscale(0);
-    }
+    
 
 }
 
 @media screen and (max-width: 768px) {
+
+    .gallery a {
+        filter: grayscale(0);
+    }
 
     .gallery__content {
         width: 100%;
