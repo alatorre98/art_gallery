@@ -203,21 +203,6 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    @media screen and (max-width: 786px) {
-        #navbar__logo {
-            font-family: 'Windsong', cursive;
-            background: #FFFFFF;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 3rem;
-            transition: all 0.5s ease;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-        }
 
 }
 
@@ -510,6 +495,7 @@
 
     .gallery__content {
         width: 100%;
+        
     }
 
     
@@ -561,21 +547,97 @@
 
 @media screen and (max-width: 500px) {
 
+    .gallery a {
+        height: 10rem;
+    }
+
+    .img-4 {
+        grid-area: img-4;
+        min-height: 5rem;
+        background-image: url(./images/brother2.jpg);
+    }
+
+
+    .img-14 {
+        grid-area: img-14;
+        min-height: 5rem;
+        background-image: url(./images/wanda.jpg);
+    }
+    
+    .img-15 {
+        grid-area: img-15;
+        min-height: 5rem;
+        background-image: url(./images/xfiles.jpg);
+    }
+    
+
     .gallery {
         margin-left: 40px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-                            'img-1 img-2'
+        
+        grid-template-areas: 'img-1 img-2'
                             'img-3 img-4'
                             'img-5 img-6'
                             'img-7 img-8'
                             'img-9 img-10'
                             'img-11 img-12'
                             'img-13 img-14';
-
     }
 
 }
+
+
+/* About Me */
+
+.about__section {
+    background-color: #fffef9;
+}
+
+.about__section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 60vh;
+    background-color: #fffef9;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+
+#about__img {
+    height: 80%;
+    width: 70%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .about__container {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-self: auto;
+            width: 100%;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+    }
+
+    #about__img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
 
 
 
